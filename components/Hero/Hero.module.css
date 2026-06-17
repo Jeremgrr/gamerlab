@@ -1,0 +1,48 @@
+.hero {
+  padding: 100px 0 60px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.kicker {
+  color: var(--primary);
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.primary {
+  background: var(--primary);
+  color: black;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.secondary {
+  border: 1px solid var(--border);
+  padding: 12px 18px;
+  border-radius: 8px;
+}

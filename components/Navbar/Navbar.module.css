@@ -1,0 +1,40 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background: var(--background);
+
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  max-width: var(--max-width);
+
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 20px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  color: var(--text-secondary);
+  transition: .2s;
+}
+
+.nav a:hover {
+  color: white;
+}
