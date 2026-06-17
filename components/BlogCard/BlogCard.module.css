@@ -1,0 +1,40 @@
+.card {
+  display: block;
+  padding: 18px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  background: var(--surface-hover);
+  box-shadow: var(--shadow);
+}
+
+.tag {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.excerpt {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.date {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.6;
+}

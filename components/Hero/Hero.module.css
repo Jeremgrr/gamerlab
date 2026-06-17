@@ -14,17 +14,19 @@
 }
 
 .title {
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 700;
   margin-bottom: 16px;
+  letter-spacing: -0.03em;
 }
 
 .subtitle {
   color: var(--text-secondary);
-  font-size: 18px;
+  font-size: 17px;
   max-width: 600px;
   margin: 0 auto 30px;
   line-height: 1.6;
+  opacity: 0.9;
 }
 
 .buttons {
