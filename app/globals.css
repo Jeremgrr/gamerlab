@@ -379,3 +379,61 @@ button.card {
 .btnPrimary:active {
   transform: translateY(0px);
 }
+
+
+/* =========================
+   PC ANALYZER GRAPHS/BARS
+========================= */
+
+
+.compareRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.compareBar {
+  flex: 1;
+  height: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barA {
+  height: 100%;
+  background: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.barB {
+  height: 100%;
+  background: #a855f7;
+  transition: width 0.3s ease;
+}
+
+.barPriceA {
+  height: 100%;
+  background: #f59e0b;
+  transition: width 0.3s ease;
+}
+
+.barPriceB {
+  height: 100%;
+  background: #ef4444;
+  transition: width 0.3s ease;
+}
+
+.barValueA {
+  height: 100%;
+  background: #22c55e;
+  transition: width 0.3s ease;
+}
+
+.barValueB {
+  height: 100%;
+  background: #14b8a6;
+  transition: width 0.3s ease;
+}
