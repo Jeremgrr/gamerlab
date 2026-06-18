@@ -5,29 +5,31 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
+import { getPosts, type Post } from "@/lib/posts";
 
-function getPosts() {
-  const dir = path.join(process.cwd(), "content/posts");
-  const files = fs.readdirSync(dir);
+// function getPosts() {
+//   const dir = path.join(process.cwd(), "content/posts");
+//   const files = fs.readdirSync(dir);
 
-  return files.map((file) => {
-    const filePath = path.join(dir, file);
-    const content = fs.readFileSync(filePath, "utf-8");
-    const { data } = matter(content);
+//   return files.map((file) => {
+//     const filePath = path.join(dir, file);
+//     const content = fs.readFileSync(filePath, "utf-8");
+//     const { data } = matter(content);
 
-    return {
-      slug: file.replace(".mdx", ""),
-      title: data.title,
-      excerpt: data.excerpt,
-      date: data.date,
-    };
-  });
-}
+//     return {
+//       slug: file.replace(".mdx", ""),
+//       title: data.title,
+//       excerpt: data.excerpt,
+//       date: data.date,
+//     };
+//   });
+// }
 
 export default function Home() {
-  const posts = getPosts();
+  const posts: Post[] = getPosts();
   const featured = posts.slice(0, 2);
   const latest = posts.slice(2, 6);
+
 
   return (
     <>
@@ -62,6 +64,7 @@ export default function Home() {
           </Link>
         </div>
       </Section>
+    
 
       {/* LATEST */}
       <Section title="🆕 Latest Posts">

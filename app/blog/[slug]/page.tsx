@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 
-import Callout from "@/components/Callout";
+import Callout from "@/components/Callout/Callout";
 
 function getPost(slug: string) {
   const filePath = path.join(

@@ -1,0 +1,19 @@
+.callout {
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.callout.warning {
+  border-color: #ffb020;
+}
+
+.callout.success {
+  border-color: #22c55e;
+}
+
+.callout.info {
+  border-color: #3b82f6;
+}
