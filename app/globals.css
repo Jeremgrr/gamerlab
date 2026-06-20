@@ -437,3 +437,28 @@ button.card {
   background: #14b8a6;
   transition: width 0.3s ease;
 }
+
+/* =========================
+   TOOLS CSS
+========================= */
+
+.launchTool {
+  margin-top: 16px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.comingSoonCard {
+  padding: 18px;
+  border-radius: var(--radius);
+  border: 1px dashed var(--border);
+  background: rgba(255,255,255,.02);
+  color: var(--text-secondary);
+  text-align: center;
+  transition: 0.2s;
+}
+
+.comingSoonCard:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}

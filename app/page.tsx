@@ -6,6 +6,7 @@ import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
 import { getPosts, type Post } from "@/lib/posts";
+import { gpus, cpus, ramKits, motherboards } from "@/lib/hardware";
 
 // function getPosts() {
 //   const dir = path.join(process.cwd(), "content/posts");
